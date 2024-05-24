@@ -7,12 +7,13 @@ React+chat gptで簡単なチャットボットを作成しました。
 
 ## 使いかた
 
-リポジトリのクローン
+-リポジトリのクローン
     ```bash
     git clone https://github.com/mittiiiiiiiii/React-gptAPI.git
 
 プロジェクトのルートディレクトリに.envを作成してください。
 そこにメモしたChat GPTのAPIを記載してください。
 
+-.envファイルの設定
     ```bash
     REACT_APP_OPENAI_API_KEY="my-api-key"
