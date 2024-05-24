@@ -31,3 +31,12 @@ npm start
 ```bash
 yarn start
 ```
+
+もし、reactモジュールが見つからないという問題が発生しているときは下のコマンドを実行してください。
+(yarnの場合)
+```bash
+rm -rf node_modules
+rm yarn.lock
+yarn install
+yarn start
+```
