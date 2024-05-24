@@ -21,3 +21,13 @@ git clone https://github.com/mittiiiiiiiii/React-gptAPI.git
 ```bash
 REACT_APP_OPENAI_API_KEY="my-api-key"
 ```
+
+npm startもしくはyarn startで実行できます
+
+```bash
+npm start
+```
+
+```bash
+yarn start
+```
