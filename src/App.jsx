@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { generateGptResponse } from './GPT/generateGptResponse';
+import axios from 'axios';
 
 function InputForm() {
   const [value,setValue]=useState('');
@@ -12,10 +12,11 @@ function InputForm() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try{
-      const response=await generateGptResponse(value);
-      alert(response);
+      const response=await axios.post('http://localhost:3001/api/generate-response', { prompt: value });
+      alert(response.data.generatedText);
     } catch (error) {
-      alert('エラーが発生しました: '+error);
+      console.error(error);
+      alert('エラーが発生しました: '+error.message);
     }
   };
 
